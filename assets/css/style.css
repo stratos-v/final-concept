@@ -1,0 +1,44 @@
+body {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.binder {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    align-items: center;
+    perspective: 1500;
+}
+
+.front, .page {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    z-index: 1;
+    position: absolute;
+}
+
+.page {
+    z-index: -1;
+    background-color: white;
+}
+
+div {
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 200px;
+    border: none;
+    background-color: rgb(185, 185, 186);
+}
+
